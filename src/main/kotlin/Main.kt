@@ -13,8 +13,6 @@ data class APIConfig(val token: String)
 
 @OptIn(PrivilegedIntent::class)
 suspend fun main(args: Array<String>) {
-  // val kord = Kord('')
-
   val config =
       ConfigLoaderBuilder.default()
           .addResourceSource("/bot-config.yaml")
